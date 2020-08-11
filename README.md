@@ -3,7 +3,7 @@ Dockerfiles de las imágenes de testeo para el curso IE0724 de la UCR.
 
 # Tags
 - python3
-- c++
+- c
 
 ## Paquetes
 - python3
