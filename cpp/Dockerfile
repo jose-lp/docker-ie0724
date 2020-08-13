@@ -12,11 +12,12 @@ RUN apt update && apt install -y  --no-install-recommends  \
         build-essential \
         make \
         cmake \
+        googletest \
         libgtest-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Configuracipon de gtest
-RUN cd /usr/src/gtest \
-    && cmake CMakeLists.txt \
-    && make \
-    && cp *.a /usr/lib
+#RUN cd /usr/src/gtest \
+#    && cmake CMakeLists.txt \
+#    && make \
+#    && cp *.a /usr/lib
