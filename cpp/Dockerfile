@@ -5,6 +5,8 @@ FROM ubuntu:20.04
 LABEL maintainer="José López Picado"
 LABEL email="joselp1695@gmail.com"
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Instalación de paquetes
 RUN apt update && apt install -y  --no-install-recommends  \
         build-essential \
