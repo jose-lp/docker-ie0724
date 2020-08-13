@@ -7,9 +7,15 @@ LABEL email="joselp1695@gmail.com"
 
 # Instalación de paquetes
 RUN apt update && apt install -y  --no-install-recommends  \
+        build-essential \
+        git \
+        libbz2-dev \
+        libreadline-dev \
+        libsqlite3-dev \
+        libssl-dev \
+        zlib1g-dev \
+        libffi-dev \
         python3-dev \
-        libpython3-dev \
-        python3 \
         python3-pip \
         make \
     && rm -rf /var/lib/apt/lists/*
