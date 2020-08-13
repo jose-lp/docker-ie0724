@@ -13,4 +13,4 @@ RUN apt update && apt install -y  --no-install-recommends  \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalación de bibliotecas de python
-#RUN command
+RUN pip3 install pyinstaller
